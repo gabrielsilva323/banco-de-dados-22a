@@ -1,0 +1,7 @@
+create database e_commerce_2;
+use e_commerce_2;
+
+INSERT INTO  cliente (nome, email, endereço ,telefone_fisico, celular, data_nascimento, genero, fã_obra, jogo_favorito, prof_favorito)
+VALUES 
+  ('mike', 'Mike_Wazowski@monstros.sa', 'A113', '11 56471-4587', '22/08/1985', 'masculino', 'monstro sa', 'data guilda'),
+('mike', 'Mike_Wazowski@monstros.sa', 'A113', '11 56471-4587', '22/08/1985', 'masculino', 'monstro sa', 'data guilda');
