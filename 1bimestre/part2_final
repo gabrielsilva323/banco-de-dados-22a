@@ -1,0 +1,76 @@
+create database e_commerce_3;
+use e_commerce_3;
+
+INSERT INTO Cliente (nome, endereco, email, celular, data_nascimento) VALUES
+(1,'mike','monstros_sa', 'Mike_Wazowski@monstros.sa', 'A113', '11 56471-4587', '22/08/1985'),
+(2,'jamal pro', 'Av. B, 456', 'maria@email.com', '888888888', '1985-08-20'),
+(3,'professor carlos', 'Rua C, 789', 'carlos@email.com', '777777777', '1988-10-10'),
+(4,'paulo Santos', 'Av. D, 321', 'ana@email.com', '666666666', '1995-03-25'),
+(5,'Pedro alexandre', 'Rua E, 654', 'pedro@email.com', '555555555', '1998-12-01'),
+(6,'cleber uon', 'Av. F, 987', 'laura@email.com', '444444444', '1980-07-12'),
+(7,'Fernanda Costa', 'Rua G, 147', 'fernanda@email.com', '333333333', '1976-09-30'),
+(8,'wesley safadão', 'Av. H, 258', 'marcos@email.com', '222222222', '1992-11-05'),
+(9, 'ben 10', 'rua dos aliens', 'ben10.000@gmail.com', 1010101010, '2007-12-27'),
+(10, 'gwen 10', 'rua dos avos dos ets', 'ben10.000@gmail.com', 1010101010, '2007-12-27');
+
+INSERT INTO Produto (nome, preco, descricao, quantidade_estoque) VALUES
+(1,'Camiseta', 29.99, 'Camiseta branca de algodão', 50),
+(2,'Calça Jeans', 59.99, 'Calça jeans azul', 30),
+(3,'Tênis', 79.99, 'Tênis preto esportivo', 20),
+(4,'Relógio', 99.99, 'Relógio analógico prateado', 10),
+(5,'Bolsa', 49.99, 'Bolsa feminina de couro', 15),
+(6,'Óculos de Sol', 39.99, 'Óculos de sol estilo aviador', 25),
+(7,'Boné', 19.99, 'Boné de baseball preto', 40),
+(8,'Mochila', 69.99, 'Mochila escolar azul', 20),
+(9,'Brinco', 9.99, 'Brinco de prata pequeno', 50),
+(10,'Colar', 14.99, 'Colar de pérolas', 35);
+
+INSERT INTO Pedido (cliente_id, numero_pedido, data_compra, valor_total, data_estimada_entrega) VALUES
+(1, 'PED-001', '2023-03-03', 149.97, '2024-04-03'),
+(2, 'PED-002', '2022-02-02', 239.97, '2022-10-22'),
+(3, 'PED-003', '2021-01-01', 69.98, '2024-07-07'),
+(4, 'PED-004', '2020-02-03', 139.97, '2024-01-07'),
+(5, 'PED-005', '2019-10-10', 600.95, '2024-01-09'),
+(6, 'PED-006', '2019-07-07', 450.95, '2024-01-09'),
+(7, 'PED-007', '2019-11-08', 460.95, '2024-01-09'),
+(8, 'PED-008', '2019-05-05', 789.95, '2024-01-09'),
+(9, 'PED-009', '2019-02-22', 456.95, '2024-01-09'),
+(10, 'PED-010', '2019-01-01', 10000000000000000000000000000000000000000000000.95, '2024-01-09');
+
+INSERT INTO ItemPedido (pedido_id, produto_id, quantidade, valor_unitario, valor_total) VALUES
+(1, 1, 2, 45.45, 59.98),
+(1, 3, 1, 79.78, 79.99),
+(2, 2, 3, 150.45, 179.97),
+(3, 5, 2, 256.99, 99.98),
+(4, 4, 1, 789.99, 99.99),
+(4, 6, 2, 126.85, 79.98),
+(4, 9, 5, 852.45, 49.95),
+(5, 7, 4, 99.45, 79.96),
+(5, 8, 1, 741.10, 69.99),
+(5, 10, 3, 159357105.99, 44.97);
+
+UPDATE cliente
+SET nome = 'James P. Sullivan'
+WHERE  cliente= 2;
+
+UPDATE cliente
+SET nome = 'Jamal noob'
+WHERE  cliente= 3;
+
+UPDATE cliente
+SET nome = 'Jesus te ama'
+WHERE  cliente= 8;
+
+UPDATE cliente
+SET nome = 'tai lung'
+WHERE  cliente= 10;
+ 
+ UPDATE pedido
+SET valor_total = '100000000101010101010101010101010101010110110101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101101010111010101101010101010101010101001010101010101010010.01'
+WHERE  pedido= 2;
+
+DELETE FROM cliente
+WHERE cliente = 3;
+
+DELETE FROM pedido
+WHERE pedido = 9;
