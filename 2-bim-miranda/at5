@@ -1,5 +1,0 @@
-create schema base_exercicios_ecomerce;
-use base_exercicios_ecomerce;
-
-select preco * 1.01
-from produtos
