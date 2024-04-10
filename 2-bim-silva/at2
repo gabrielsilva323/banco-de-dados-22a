@@ -1,0 +1,6 @@
+create schema base_exercicios_ecomerce;
+use base_exercicios_ecomerce;
+
+select nome, preco
+from produtos  
+where preco > 100;
