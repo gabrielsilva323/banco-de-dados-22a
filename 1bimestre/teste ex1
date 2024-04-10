@@ -1,0 +1,4 @@
+create schema base_exercicios_ecomerce;
+use base_exercicios_ecomerce;
+
+select * from produtos where nome like 's%';
