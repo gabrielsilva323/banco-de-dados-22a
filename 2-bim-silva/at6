@@ -1,6 +1,0 @@
-create schema base_exercicios_ecomerce;
-use base_exercicios_ecomerce;
-
-select nome, preco, quantidade_estoque
-from produtos
-order by quantidade_estoque desc
