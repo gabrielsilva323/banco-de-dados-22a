@@ -1,0 +1,3 @@
+UPDATE livros
+SET disponivel = FALSE
+WHERE ano_publicacao <= 2000;
