@@ -1,0 +1,3 @@
+SELECT * 
+FROM livros 
+ORDER BY ano_publicacao DESC;
