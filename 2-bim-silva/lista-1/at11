@@ -1,0 +1,2 @@
+DELETE FROM livros WHERE editora = 'Penguin Books';
+
