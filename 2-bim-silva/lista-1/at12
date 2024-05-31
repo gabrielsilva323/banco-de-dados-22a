@@ -1,0 +1,3 @@
+SELECT categoria
+FROM livros
+WHERE quantidade_paginas > '500';
