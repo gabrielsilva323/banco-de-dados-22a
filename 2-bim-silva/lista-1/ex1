@@ -1,0 +1,2 @@
+INSERT INTO Livros (titulo, autor, ano_publicacao, disponivel, categoria, isbn, editora, quantidade_paginas, idioma)
+VALUES  ('As Crônicas de Nárnia', 'C.S. Lewis','1950', 'Fantasia', '978-0064471190','HarperCollins', '768', 'Inglês');
