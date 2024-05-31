@@ -1,0 +1,3 @@
+UPDATE livros
+SET editora = 'Plume Books'
+WHERE titulo = '1984';
