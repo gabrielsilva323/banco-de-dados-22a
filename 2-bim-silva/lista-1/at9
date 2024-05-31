@@ -1,0 +1,1 @@
+DELETE FROM livros WHERE idioma = 'Francês' AND ano_publicacao < 1970;
