@@ -1,0 +1,3 @@
+SELECT categoria, COUNT(categoria) quantidade
+FROM livros
+GROUP BY categoria;
