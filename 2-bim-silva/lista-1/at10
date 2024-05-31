@@ -1,0 +1,1 @@
+DELETE FROM livros WHERE titulo = 'As Crônicas de Nárnia';
