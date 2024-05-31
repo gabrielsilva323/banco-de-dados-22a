@@ -1,0 +1,2 @@
+ SELECT categoria, SUM(quantidade_paginas), SUM(quantidade_paginas)/COUNT(quantidade_paginas) FROM livros
+ WHERE categoria = 'drama';
