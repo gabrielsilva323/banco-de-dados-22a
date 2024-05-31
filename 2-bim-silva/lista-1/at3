@@ -1,2 +1,2 @@
 INSERT INTO Livros (titulo, autor, ano_publicacao, disponivel, categoria, isbn, editora, quantidade_paginas, idioma) 
-VALUES ('A Saga dos imperadores','Jamal segundo','2001','true','fictício','978-85-12345-67-8',);
+VALUES ('A Saga dos imperadores','Jamal segundo','2001','true','fictício','978-40028922','Jamal clash','1.500', 'pt-br');
