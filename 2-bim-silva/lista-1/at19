@@ -1,0 +1,6 @@
+SELECT titulo FROM livros WHERE idioma = 'inglês'
+UNION
+SELECT titulo
+FROM livros
+WHERE idioma = 'português';
+
