@@ -1,0 +1,2 @@
+SELECT * FROM Livros
+WHERE categoria IN ('Fantasia', 'Ficção Científica', 'Fábula');
