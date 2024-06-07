@@ -1,0 +1,3 @@
+SELECT titulo,ano_publicacao
+FROM Livros
+ORDER BY ano_publicacao;
