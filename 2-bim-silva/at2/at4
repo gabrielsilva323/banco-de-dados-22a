@@ -1,0 +1,4 @@
+SELECT autor, COUNT(*) AS count_livros
+FROM Livros
+GROUP BY autor
+HAVING count_livros > 3;  
