@@ -1,0 +1,2 @@
+SELECT * FROM Livros 
+WHERE titulo LIKE '%senhor%';
