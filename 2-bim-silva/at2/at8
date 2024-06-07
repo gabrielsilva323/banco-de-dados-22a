@@ -1,0 +1,2 @@
+SELECT * FROM Livros
+WHERE quantidade_paginas BETWEEN 200 AND 400;
