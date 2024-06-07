@@ -1,0 +1,2 @@
+SELECT * FROM Livros    
+WHERE ano_publicacao  between 2000 and 2010;
