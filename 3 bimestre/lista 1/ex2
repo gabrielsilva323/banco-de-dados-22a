@@ -1,0 +1,7 @@
+SELECT product_name, quantity
+FROM Products
+INNER JOIN order_items
+ON Products.product_id = Order_Items.product_id
+INNER JOIN orders
+ON Order_items.order_id = Orders.order_id
+WHERE customer_id = 1;
