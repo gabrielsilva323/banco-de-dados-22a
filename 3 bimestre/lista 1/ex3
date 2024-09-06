@@ -1,0 +1,9 @@
+SELECT CONCAT(first_name, ' ', last_name) as name, SUM(price*quantity)
+FROM Customers JOIN Orders
+ON Customers.customer_id = Orders.customer_id
+JOIN Order_Items
+ON Orders.order_id = Order_Items.order_id
+JOIN Products
+ON Order_Items.product_id = Products.product_id
+GROUP BY name
+;
