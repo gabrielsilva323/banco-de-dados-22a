@@ -1,5 +1,5 @@
-create view professores_horarios as
-select professor.nome, disciplina.nome, turma.horario from professor
-join turma on turma.id_professor = professor.id_professor
-join disciplina on disciplina.id_disciplina = turma.id_disciplina
+CREATE VIEW status AS
+SELECT aluno.nome as nome_aluno, disciplina.nome as nome_disciplina, status FROM aluno
+JOIN matricula on matricula.id_aluno = aluno.id_aluno
+JOIN disciplina on disciplina.id_disciplina = matricula.id_disciplina
 ;
