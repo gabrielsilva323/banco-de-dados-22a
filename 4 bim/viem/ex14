@@ -1,0 +1,4 @@
+create view professores as
+select professor.especialidade, count(professor.id_professor) from professor
+group by professor.especialidade
+;
