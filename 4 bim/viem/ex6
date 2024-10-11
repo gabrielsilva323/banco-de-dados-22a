@@ -1,0 +1,4 @@
+create view professor_especialidade as
+select curso.nome, disciplina.nome, curso.carga_horaria from curso
+join disciplina on disciplina.id_curso = curso.id_curso
+;
