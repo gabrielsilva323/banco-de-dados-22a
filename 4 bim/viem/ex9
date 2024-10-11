@@ -1,0 +1,7 @@
+create view disciplinas_terminadas as
+select aluno.nome, disciplina.nome, count(disciplina.id_disciplina) from aluno
+join matricula on aluno.id_aluno = matricula.id_aluno
+join disciplina on disciplina.id_disciplina = matricula.id_disciplina
+where matricula.status = 'Concluído'
+group by aluno.id_aluno, aluno.nome, disciplina.nome
+;
