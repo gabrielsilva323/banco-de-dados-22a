@@ -1,0 +1,5 @@
+create view disciplinas_sem_aluno as 
+select disciplina.id_disciplina, disciplina.nome, disciplina.descricao
+from disciplina
+left join matricula on disciplina.id_disciplina = matricula.id_disciplina
+where matricula.id_disciplina is null;
