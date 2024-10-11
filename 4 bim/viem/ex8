@@ -1,0 +1,7 @@
+create view alunos_mais_de_uma_disciplina as
+select aluno.nome, disciplina.nome, count(disciplina.id_disciplina) from aluno
+join matricula on aluno.id_aluno = matricula.id_aluno
+join disciplina on disciplina.id_disciplina = matricula.id_disciplina
+group by aluno.id_aluno, aluno.nome, disciplina.nome
+having count(disciplina.id_disciplina) > 1
+;
