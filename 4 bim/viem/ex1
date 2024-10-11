@@ -4,4 +4,3 @@ FROM aluno
 JOIN matricula on matricula.id_aluno = aluno.id_aluno
 JOIN disciplina on matricula.id_disciplina = disciplina.id_disciplina
 JOIN curso on curso.id_curso = disciplina.id_curso
-;
