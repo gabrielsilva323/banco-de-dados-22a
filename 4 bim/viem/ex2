@@ -1,5 +1,5 @@
-CREATE VIEW status AS
-SELECT aluno.nome as nome_aluno, disciplina.nome as nome_disciplina, status FROM aluno
+CREATE VIEW alunos_por_disciplina AS
+SELECT count(aluno.nome) as numero_de_alunos, disciplina.nome as disciplinas FROM aluno
 JOIN matricula on matricula.id_aluno = aluno.id_aluno
-JOIN disciplina on disciplina.id_disciplina = matricula.id_disciplina
-;
+JOIN disciplina on matricula.id_disciplina = disciplina.id_disciplina
+GROUP BY disciplinas
