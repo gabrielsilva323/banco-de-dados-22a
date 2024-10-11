@@ -1,0 +1,3 @@
+create view professor_especialidade as
+select professor.nome, especialidade from professor
+;
