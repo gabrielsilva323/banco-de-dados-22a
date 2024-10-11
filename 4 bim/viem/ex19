@@ -1,0 +1,3 @@
+create view detalhes_aluno as
+select nome, cpf, email from aluno
+;
