@@ -1,0 +1,5 @@
+create view disciplina_por_professor as
+select professor.nome, count(turma.id_disciplina) from professor
+join turma on turma.id_professor = professor.id_professor
+group by professor.id_professor
+;
