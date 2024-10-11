@@ -1,0 +1,4 @@
+create view datas_nascimento as
+select nome, data_nascimento from aluno
+where data_nascimento < '2004-01-01'
+;
