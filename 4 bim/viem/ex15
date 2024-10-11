@@ -1,0 +1,3 @@
+create view idade_aluno as
+select aluno.nome, timestampdiff(year, aluno.data_nascimento, '2024-10-11') from aluno
+;
