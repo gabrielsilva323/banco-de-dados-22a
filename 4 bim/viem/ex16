@@ -1,0 +1,5 @@
+create view ultima_matricula as
+select aluno.nome, max(matricula.data_matricula) from aluno
+join matricula on aluno.id_aluno = matricula.id_aluno
+group by aluno.nome
+;
