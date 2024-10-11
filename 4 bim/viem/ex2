@@ -1,0 +1,5 @@
+CREATE VIEW status AS
+SELECT aluno.nome as nome_aluno, disciplina.nome as nome_disciplina, status FROM aluno
+JOIN matricula on matricula.id_aluno = aluno.id_aluno
+JOIN disciplina on disciplina.id_disciplina = matricula.id_disciplina
+;
