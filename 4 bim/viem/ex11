@@ -1,0 +1,7 @@
+create view alunos_matriculas_trancadas as
+select aluno.nome from aluno
+join matricula on aluno.id_aluno = matricula.id_aluno
+join disciplina on disciplina.id_disciplina = matricula.id_disciplina
+where matricula.status = 'Trancado'
+group by aluno.nome
+;
