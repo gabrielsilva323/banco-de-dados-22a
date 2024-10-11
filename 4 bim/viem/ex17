@@ -1,0 +1,5 @@
+create view disciplinas_curso as
+select disciplina.nome from disciplina
+join curso on curso.id_curso = disciplina.id_curso
+where curso.nome = 'Engenharia de Software'
+;
