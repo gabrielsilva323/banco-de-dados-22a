@@ -1,0 +1,4 @@
+create view turmas as
+select * from turma
+where semestre = '2024.1'
+;
