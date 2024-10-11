@@ -5,3 +5,5 @@ join disciplina on disciplina.id_disciplina = matricula.id_disciplina
 where matricula.status = 'Trancado'
 group by aluno.nome
 ;
+
+select * from alunos_matriculas_trancadas;
